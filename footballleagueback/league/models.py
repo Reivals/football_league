@@ -11,7 +11,7 @@ class Club(models.Model):
     squad = models.ForeignKey('Footballer', on_delete=models.SET_NULL, null=True, blank=True, related_name='+')
 
     def __str__(self):
-        return self.name
+        return 'Club(name=' + self.name + ', city=' + self.city + ')'
 
 
 class Goal(models.Model):
@@ -25,6 +25,10 @@ class Goal(models.Model):
     footballer = models.ForeignKey('Footballer', on_delete=models.SET_NULL, null=True, blank=True, related_name='+')
     team = models.CharField(choices=TEAM, max_length=255)
 
+    def __str__(self):
+        return 'Goal(match=' + str(self.match) + ', footballer=' + str(self.footballer) + ', goal minute=' + str(
+            self.goal_minute) + ', team=' + str(self.team) + ')'
+
 
 class Footballer(models.Model):
     name = models.CharField(max_length=255)
@@ -33,6 +37,9 @@ class Footballer(models.Model):
     nationality = models.CharField(max_length=255)
     club = models.ForeignKey(Club, on_delete=models.SET_NULL, null=True, blank=True, related_name='+')
     goals = models.ForeignKey(Goal, on_delete=models.SET_NULL, null=True, blank=True, related_name='+')
+
+    def __str__(self):
+        return 'Footballer(name=' + self.name + ', surname=' + self.surname + ')'
 
 
 class Match(models.Model):
@@ -46,3 +53,7 @@ class Match(models.Model):
     match_date = models.DateField()
     goals = models.ForeignKey('Goal', on_delete=models.SET_NULL, null=True, blank=True, related_name='+')
     result = models.CharField(choices=RESULT, max_length=255)
+
+    def __str__(self):
+        return 'Match(home_side=' + str(self.home_side) + ', away_side=' + str(self.away_side) + ', match_date=' + str(
+            self.match_date) + ')'
