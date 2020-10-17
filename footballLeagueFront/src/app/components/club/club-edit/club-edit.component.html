@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 ml-1 mt-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div id="club-data">
+
+          <div class="form-group">
+            <label for="name">Nazwa</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="model.name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="city">Miasto</label>
+            <input type="text" id="city" class="form-control" [(ngModel)]="model.city" name="city" required>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Kraj</label>
+            <input type="text" id="country" class="form-control" [(ngModel)]="model.country" name="country" required>
+          </div>
+
+        </div>
+        <button class=" btn btn-primary" type="submit" [disabled]="f.invalid" [ngClass]="{'disabled': f.invalid}">{{btnText}}</button>
+      </form>
+    </div>
+  </div>
+</div>

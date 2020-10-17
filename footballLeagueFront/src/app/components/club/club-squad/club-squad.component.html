@@ -1,0 +1,15 @@
+<div class="col-md-10 mb-4">
+  <h1>Squad</h1>
+</div>
+<div class="row text-center">
+  <div class="col-md-10 mr-2">
+    <ul class="list-group" *ngFor="let footballer of footballers; let i = index">
+      <li class="list-group-item">
+        <h3 style="margin-bottom: 0.2rem">{{footballer.name}}  {{footballer.surname}}</h3>
+        <p style="margin-bottom: 0.2rem">{{footballer.position}}</p>
+        <p style="margin-bottom: 0.2rem">{{footballer.nationality}}  {{footballer.dateOfBirth}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
