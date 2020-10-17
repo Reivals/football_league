@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80f2d6da-d4a4-49bf-b7a2-dc501ebbbeee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/league/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/league/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="80f2d6da-d4a4-49bf-b7a2-dc501ebbbeee" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/league/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -146,12 +143,12 @@
       <updated>1602410244336</updated>
       <workItem from="1602410246004" duration="4050000" />
       <workItem from="1602861611093" duration="2403000" />
-      <workItem from="1602932527716" duration="1484000" />
+      <workItem from="1602932527716" duration="1853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7937000" />
+    <option name="totallyTimeSpent" value="8306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -269,8 +266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/league/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
