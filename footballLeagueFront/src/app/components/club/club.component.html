@@ -1,0 +1,35 @@
+<div class="container mt-md-4">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <div class="col-md-10 mb-3">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Kluby</h1>
+          </div>
+          <div class="col-md-2 icon">
+            <i class="fas fa-plus-square plus" [routerLink]="['./add']"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+          <div class="col-md-10 mb-2">
+            <ul class="list-group" *ngFor="let club of clubs; let i = index">
+              <li class="list-group-item">
+                <h3 [routerLink]="['./squad', club.id]">{{club.name}}</h3>
+                <p>{{club.city}}  {{club.country}}</p>
+                <div class="text-right">
+                  <span class="icon">
+                    <i class="fas fa-edit edit" [routerLink]="['./edit', club.id]"></i>
+                    <i class="far fa-trash-alt alt" (click)="removeClub(i)"></i>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-8 text-center">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
