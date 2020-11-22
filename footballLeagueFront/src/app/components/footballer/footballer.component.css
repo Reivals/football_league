@@ -1,0 +1,40 @@
+.club{
+  border-color: #005cbf;
+  border-style: solid;
+  border-radius: 25px;
+}
+p{
+  margin-bottom: 0px;
+}
+.icon{
+  font-size: 2em;
+  color: lightgrey;
+  padding-bottom: 0.5em;
+}
+.edit{
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+.alt{
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+.edit:hover{
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  color: #005cbf;
+}
+.alt:hover{
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  color: #005cbf;
+}
+.plus{
+  margin-right: 0.5em;
+  margin-top: 0.4em;
+}
+.plus:hover{
+  margin-right: 0.5em;
+  margin-top: 0.4em;
+  color: #005cbf;
+}
