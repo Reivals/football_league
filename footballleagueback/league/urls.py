@@ -13,4 +13,16 @@ urlpatterns = [
     path('footballer/<str:id>/', views.footballerDetail, name='footballer-details'),
     path('footballer/<str:id>/update', views.footballerUpdate, name='footballer-update'),
     path('footballer/<str:id>/', views.footballerDelete, name='footballer-delete'),
+
+    path('match', views.matchList, name='match-list'),
+    path('match/add', views.matchCreate, name='match-create'),
+    path('match/<str:id>/', views.matchDetail, name='match-details'),
+    path('match/<str:id>/update', views.matchUpdate, name='match-update'),
+    path('match/<str:id>/', views.matchDelete, name='match-delete'),
+
+    path('goal', views.goalList, name='goal-list'),
+    path('goal/add', views.goalCreate, name='goal-create'),
+    path('goal/<str:id>/', views.goalDetail, name='goal-details'),
+    path('goal/<str:id>/update', views.goalUpdate, name='goal-update'),
+    path('goal/<str:id>/', views.goalDelete, name='goal-delete'),
 ]
