@@ -5,3 +5,4 @@ from league import views
 
 router = routers.DefaultRouter()
 router.register(r'club', views.ClubViewSet)
+router.register(r'footballer', views.FootballerViewSet)
