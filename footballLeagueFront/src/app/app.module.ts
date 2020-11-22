@@ -6,7 +6,6 @@ import {AppComponent} from './app.component';
 import {ClubEditComponent} from './components/club/club-edit/club-edit.component';
 import {ClubComponent} from './components/club/club.component';
 import {RouterModule, Routes} from '@angular/router';
-import {ClubSquadComponent} from './components/club/club-squad/club-squad.component';
 import {FormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
@@ -17,7 +16,6 @@ const routes: Routes = [
     path: 'clubs', component: ClubComponent, children: [
       {path: 'edit/:id', component: ClubEditComponent},
       {path: 'add', component: ClubEditComponent},
-      {path: 'squad/:id', component: ClubSquadComponent}
     ]
   },
   {path: '', component: ClubComponent, pathMatch: 'full'}
@@ -29,7 +27,6 @@ const routes: Routes = [
     AppComponent,
     ClubComponent,
     ClubEditComponent,
-    ClubSquadComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),

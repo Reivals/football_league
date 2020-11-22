@@ -2,29 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33886b66-d661-436b-a8a0-94c04cd8e4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/footballLeagueFront.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-edit/club-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-edit/club-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-edit/club-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-squad/club-squad.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-squad/club-squad.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club-squad/club-squad.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/club/club.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/club.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/adapter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/club.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/update-emitter.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer-edit/footballer-edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer-edit/footballer-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer-edit/footballer-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/footballer.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/goal.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/match.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/footballer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1j0PkJ2oPeLP6JOXS1wL4UTBR3B" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/services" />
@@ -44,12 +37,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="D:\Sem2M\PPP\football_league\footballLeagueFront\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Sem2M\PPP\football_league\footballLeagueFront\src\app\services" />
       <recent name="D:\Sem2M\PPP\football_league\footballLeagueFront\src\app\models" />
+      <recent name="D:\Sem2M\PPP\football_league\footballLeagueFront\src\app\components\footballer" />
       <recent name="D:\Sem2M\PPP\football_league\footballLeagueFront\src\app\components" />
     </key>
   </component>
@@ -106,18 +101,27 @@
       <option name="presentableId" value="Default" />
       <updated>1602938177868</updated>
       <workItem from="1602938185278" duration="1729000" />
+      <workItem from="1606042880479" duration="1446000" />
+      <workItem from="1606044419019" duration="280000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

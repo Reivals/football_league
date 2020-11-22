@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 ml-1 mt-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div id="footballer-data">
+
+          <div class="form-group">
+            <label for="name">Imie zawodnika</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="model.name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Nazwisko zawodnika</label>
+            <input type="text" id="surname" class="form-control" [(ngModel)]="model.surname" name="surname" required>
+          </div>
+
+          <div class="form-group">
+            <label for="birth-date">Data urodzenia</label>
+            <input type="date" id="birth-date" class="form-control" [(ngModel)]="model.dateOfBirth" name="birth-date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nationality">Narodowość</label>
+            <input type="text" id="nationality" class="form-control" [(ngModel)]="model.nationality" name="nationality" required>
+          </div>
+
+          <div class="form-group">
+            <label for="position">Pozycja</label>
+            <select class="form-control" name="position" id="position" required [(ngModel)]="model.position">
+              <option *ngFor="let position of positions" [ngValue]="position">{{position}}</option>
+            </select>
+          </div>
+
+        </div>
+        <button class=" btn btn-primary" type="submit" [disabled]="f.invalid" [ngClass]="{'disabled': f.invalid}">{{btnText}}</button>
+      </form>
+    </div>
+  </div>
+  <div class="row" *ngIf="!addMode">
+    <div class="col-md-10 ml-1 mt-2">
+      <form (ngSubmit)="onChangeClub(club)" #club="ngForm">
+        <div id="club-data">
+
+          <div class="form-group">
+            <label for="currentClub">Obecny klub</label>
+            <input type="text" id="currentClub" class="form-control" [(ngModel)]="playerClub.name" name="currentClub" [disabled]="true">
+          </div>
+
+          <div class="form-group">
+            <label for="club">Lista klubów</label>
+            <select class="form-control" name="club" id="club" required [(ngModel)]="selectedClub">
+              <option *ngFor="let club of clubs" [ngValue]="club">{{club.name}}</option>
+            </select>
+          </div>
+
+        </div>
+        <button class=" btn btn-primary" type="submit" [disabled]="club.invalid" [ngClass]="{'disabled': club.invalid}">Zmień klub</button>
+      </form>
+    </div>
+  </div>
+</div>

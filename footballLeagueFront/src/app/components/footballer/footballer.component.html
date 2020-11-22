@@ -1,0 +1,39 @@
+
+<div class="container mt-md-4">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <div class="col-md-10 mb-3">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Piłkarze</h1>
+          </div>
+          <div class="col-md-2 icon">
+            <i class="fas fa-plus-square plus" [routerLink]="['./add']"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-10 mb-2">
+          <ul class="list-group" *ngFor="let footballer of footballers; let i = index">
+            <li class="list-group-item">
+              <h3>{{footballer.name}}  {{footballer.surname}}</h3>
+              <p>{{footballer.position}}</p>
+              <p>{{footballer.nationality}}  {{footballer.dateOfBirth}}</p>
+              <div class="text-right">
+                <span class="icon">
+                  <i class="fas fa-edit edit" [routerLink]="['./edit', footballer.id]"></i>
+                  <i class="far fa-trash-alt alt" (click)="removeFootballer(i)"></i>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-8 text-center">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
