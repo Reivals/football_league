@@ -14,7 +14,7 @@ export class ClubService {
 
   private restPath = restPath.restPath + '/club/';
 
-  constructor(private http: HttpClient, private clubAdapter: ClubAdapter, private footballerAdapter: FootballerAdapter) {
+  constructor(private http: HttpClient, private clubAdapter: ClubAdapter) {
   }
 
   private handleError(error: HttpErrorResponse) {
@@ -44,14 +44,6 @@ export class ClubService {
       catchError(this.handleError)
     );
   }
-
-    getFootballersFromClub(id: number): Observable<Footballer[]> {
-      return this.http.get(this.restPath + id + '/').pipe(
-        map((data: any) => data.footballers.map(item => this.footballerAdapter.adapt(item)
-        )),
-        catchError(this.handleError)
-      );
-    }
 
   removeClub(id: number): Observable<any> {
     return this.http.delete(this.restPath + id + '/', {observe: 'response'}).pipe(

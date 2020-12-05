@@ -2,71 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33886b66-d661-436b-a8a0-94c04cd8e4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home-panel/home-panel.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home-panel/home-panel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/home-panel/home-panel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/goals/goals.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/goals/goals.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/goals/goals.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-edit/match-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-edit/match-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-edit/match-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/match.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/team-picker/team-picker.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/team-picker/team-picker.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/team-picker/team-picker.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/match/team/team.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/page-not-found/page-not-found.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/page-not-found/page-not-found.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/page-not-found/page-not-found.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/card.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/card.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/goal.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/match.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../footballleagueback/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../footballleagueback/league/enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../footballleagueback/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/club/club-squad/club-squad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/club/club-squad/club-squad.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/club/club.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/club/club.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/footballer/footballer-edit/footballer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer-edit/footballer-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footballer/footballer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/footballer.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/footballer.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/goal.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/goal.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/match.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/match.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/contact/contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/club.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/club.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/footballer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/footballer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/update-emitter.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/update-emitter.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/footballleagueback/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/footballleagueback/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/footballleagueback/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/footballleagueback/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/league/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/migrations/0002_auto_20201017_1334.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/league/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/league/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/league/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../footballleagueback/league/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/league/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +105,7 @@
       <workItem from="1606044419019" duration="14434000" />
       <workItem from="1606559047644" duration="11928000" />
       <workItem from="1606575835338" duration="2280000" />
-      <workItem from="1607166884171" duration="1960000" />
+      <workItem from="1607166884171" duration="2939000" />
     </task>
     <servers />
   </component>

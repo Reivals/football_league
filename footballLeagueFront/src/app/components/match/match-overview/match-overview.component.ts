@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Match} from '../../../models/match.model';
 import {Goal} from '../../../models/goal.model';
 import {Club} from '../../../models/club.model';
@@ -34,7 +34,8 @@ export class MatchOverviewComponent implements OnInit {
     private clubService: ClubService,
     private goalService: GoalService,
     private toastService: ToastrService,
-    private updaterService: UpdateEmitterService
+    private updaterService: UpdateEmitterService,
+    private router: Router
   ) {
   }
 
@@ -56,8 +57,6 @@ export class MatchOverviewComponent implements OnInit {
                     });
 
                     this.goals = goals;
-                    console.log("TUTAJ2");
-                    console.log(this.match);
                     this.matchGoals = this.getGoals(match);
                     this.matchCards = this.getCards(match);
                     this.match = match;
@@ -93,8 +92,6 @@ export class MatchOverviewComponent implements OnInit {
                         });
 
                         this.goals = goals;
-                        console.log("TUTAJ1");
-                        console.log(this.match);
                         this.matchGoals = this.getGoals(match);
                         this.matchCards = this.getCards(match);
                         this.match = match;
@@ -150,6 +147,7 @@ export class MatchOverviewComponent implements OnInit {
       answer => {
         this.toastService.success('Usunięto', 'Wszystko ok');
         this.updaterService.updateMatches();
+        this.router.navigateByUrl('/matches');
       },
       error => this.toastService.error(error, 'To nie zadziałało')
     );
