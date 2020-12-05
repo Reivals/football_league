@@ -46,8 +46,8 @@ export class FootballerEditComponent implements OnInit {
         this.footballerService.getFootballer(this.footballerID).subscribe(
           data => {
             this.model = data;
-            if (this.model.clubId != null) {
-              this.clubService.getClub(this.model.clubId).subscribe(
+            if (this.model.club != null) {
+              this.clubService.getClub(this.model.club).subscribe(
                 data => {
                   this.playerClub = data;
                 }
@@ -97,7 +97,7 @@ export class FootballerEditComponent implements OnInit {
   }
 
   onChangeClub(form: NgForm) {
-    this.footballerService.assignClub(this.model.id, this.selectedClub.id).subscribe(
+    this.footballerService.assignClub(this.model, this.selectedClub.id).subscribe(
       data => {
         this.updateEmitter.updateFootballers();
         this.toastr.success('Zmienioni klub zawodnika', 'Success!');

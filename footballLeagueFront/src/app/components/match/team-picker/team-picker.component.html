@@ -1,0 +1,34 @@
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Klub gospodarzy" [(ngModel)]="teamDescriptor" readonly required>
+  <div class="input-group-append">
+    <button type="button"
+            class="btn btn-secondary"
+            data-toggle="modal"
+            [attr.data-target]="'#'+id+'Modal'">Wybierz</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="{{id}}Modal" tabindex="-1" role="dialog" [attr.aria-labelledby]="id+'Label'" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="{{id}}Label">Wybierz klub</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group list-group-flush">
+          <a class="list-group-item" *ngFor="let club of clubs" (click)="select(club.id)" [class.active]="valueCandidate===club.id" >
+            <span class="h3"> {{ club.name }} </span> {{ club.city }} <small> {{club.country}} </small>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="save()">Zapisz</button>
+      </div>
+    </div>
+  </div>
+</div>

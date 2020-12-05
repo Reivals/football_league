@@ -25,4 +25,10 @@ urlpatterns = [
     path('goal/<str:id>/', views.goalDetail, name='goal-details'),
     path('goal/<str:id>/update', views.goalUpdate, name='goal-update'),
     path('goal/<str:id>/', views.goalDelete, name='goal-delete'),
+
+    path('card', views.cardList, name='card-list'),
+    path('card/add', views.cardCreate, name='card-create'),
+    path('card/<str:id>/', views.cardDetail, name='card-details'),
+    path('card/<str:id>/update', views.cardUpdate, name='card-update'),
+    path('card/<str:id>/', views.cardDelete, name='card-delete'),
 ]

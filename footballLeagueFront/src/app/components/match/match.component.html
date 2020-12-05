@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row mt-md-4">
+        <h1>Mecze</h1>
+        <div class="icon">
+          <i class="fas fa-plus-square plus" [routerLink]="['./add']"></i>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="list-group col">
+          <li class="row list-group-item" *ngFor="let match of matches" [routerLink]="['./', match.id]" routerLinkActive="active">
+            <div class="row" >
+              <div class="col-md-5 "
+                   [class.alert]="match.result==='HOMEWIN'"
+                   [class.alert-info]="match.result==='HOMEWIN'">
+                <app-team [team]="getClub(match.homeSide)"></app-team>
+              </div>
+
+              <div class="col-md-2" >
+                <div class="h1 text-center">{{ getResultString(match) }}</div>
+                <div class="text-center" >{{ match.matchDate | date }}</div>
+              </div>
+
+              <div class="col-md-5  text-right"
+                   [class.alert]="match.result==='AWAYWIN'"
+                   [class.alert-info]="match.result==='AWAYWIN'">
+                <app-team [team]="getClub(match.awaySide)"></app-team>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -9,7 +9,7 @@ export const environment = {
 };
 
 export const restPath = {
-  restPath: 'http://localhost:8080/FootballLeague/api'
+  restPath: 'http://localhost:8000'
 }
 export const option = {
   headers: new HttpHeaders().set('Content-Type', 'application/json')

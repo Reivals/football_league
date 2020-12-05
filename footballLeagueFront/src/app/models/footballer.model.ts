@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Adapter} from '../services/adapter';
 
 export class Footballer {
-  constructor(public clubId: number,
+  constructor(public club: number,
               public dateOfBirth: string,
               public id: number,
               public name: string,
@@ -17,7 +17,7 @@ export class Footballer {
 export class FootballerAdapter implements Adapter<Footballer> {
   adapt(item: any): Footballer {
     return new Footballer(
-      item.clubId,
+      item.club,
       item.dateOfBirth,
       item.id,
       item.name,

@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/league/views.py" line="8" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/league/views.py" line="10" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80f2d6da-d4a4-49bf-b7a2-dc501ebbbeee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/footballleagueback/api.py" afterDir="false" />
+    <list default="true" id="80f2d6da-d4a4-49bf-b7a2-dc501ebbbeee" name="Default Changelist" comment="K">
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/home-panel/home-panel.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/home-panel/home-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/home-panel/home-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/goals/goals.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/goals/goals.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/goals/goals.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-edit/match-edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-edit/match-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-edit/match-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-overview/match-overview.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-overview/match-overview.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match-overview/match-overview.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/match.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/team-picker/team-picker.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/team-picker/team-picker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/team-picker/team-picker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/match/team/team.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/navbar/navbar.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/navbar/navbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/page-not-found/page-not-found.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/page-not-found/page-not-found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/page-not-found/page-not-found.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/card.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/card.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/goal.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/match.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../footballLeagueFront/src/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/league/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/club/club-squad/club-squad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/club/club-squad/club-squad.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/club/club.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/club/club.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer-edit/footballer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer-edit/footballer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/components/footballer/footballer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/footballer.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/footballer.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/goal.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/goal.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/match.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/models/match.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/club.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/club.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/footballer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/footballer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/update-emitter.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/app/services/update-emitter.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballLeagueFront/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../footballLeagueFront/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footballleagueback/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/footballleagueback/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footballleagueback/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/footballleagueback/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footballleagueback/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/footballleagueback/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/league/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/league/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/league/migrations/0002_auto_20201017_1334.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/league/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/league/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/league/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/league/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/league/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/league/views.py" afterDir="false" />
     </list>
@@ -25,43 +83,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footballleagueback/urls.py">
+        <entry file="file://$PROJECT_DIR$/league/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
-                <element signature="e#642#674#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/league/models.py">
+        <entry file="file://$PROJECT_DIR$/league/enums.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="34">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/league/views.py">
+        <entry file="file://$PROJECT_DIR$/league/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#1#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/generics.py">
+        <entry file="file://$PROJECT_DIR$/league/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="183" column="19" selection-start-line="183" selection-start-column="6" selection-end-line="183" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,6 +130,20 @@
     <findStrings>
       <find>league.apps.LeagueConfigdjango</find>
       <find>api</find>
+      <find>Deseria</find>
+      <find>admin</find>
+      <find>homeSide_id</find>
+      <find>iteritems</find>
+      <find>debug</find>
+      <find>type</find>
+      <find>null</find>
+      <find>Position</find>
+      <find>many</find>
+      <find>Edytuj</find>
+      <find>result</find>
+      <find>Result</find>
+      <find>position</find>
+      <find>resul</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Sem2M\PPP\football_league\footballleagueback\footballleagueback</dir>
@@ -83,20 +155,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/league/admin.py" />
-        <option value="$PROJECT_DIR$/footballleagueback/settings.py" />
-        <option value="$PROJECT_DIR$/league/models.py" />
-        <option value="$PROJECT_DIR$/league/serializers.py" />
-        <option value="$PROJECT_DIR$/footballleagueback/api.py" />
-        <option value="$PROJECT_DIR$/league/urls.py" />
         <option value="$PROJECT_DIR$/footballleagueback/urls.py" />
+        <option value="$PROJECT_DIR$/league/urls.py" />
+        <option value="$PROJECT_DIR$/footballleagueback/api.py" />
+        <option value="$PROJECT_DIR$/league/admin.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/footballleagueback/settings.py" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/league/serializers.py" />
+        <option value="$PROJECT_DIR$/league/enums.py" />
+        <option value="$PROJECT_DIR$/league/models.py" />
         <option value="$PROJECT_DIR$/league/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-170" />
+    <option name="y" value="45" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -108,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,10 +200,17 @@
               <item name="footballleagueback" type="462c0819:PsiDirectoryNode" />
               <item name="league" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="footballleagueback" type="b2602c69:ProjectViewProjectNode" />
+              <item name="footballleagueback" type="462c0819:PsiDirectoryNode" />
+              <item name="league" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,6 +239,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="footballleagueback.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -189,32 +271,37 @@
       <workItem from="1602410246004" duration="4050000" />
       <workItem from="1602861611093" duration="2403000" />
       <workItem from="1602932527716" duration="5147000" />
+      <workItem from="1606045971683" duration="17583000" />
+      <workItem from="1606067548258" duration="1461000" />
+      <workItem from="1606559013510" duration="10804000" />
+      <workItem from="1606575781475" duration="2322000" />
+      <workItem from="1607166900708" duration="1987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11600000" />
+    <option name="totallyTimeSpent" value="45757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.18130311" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27015558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.23371105" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35410765" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,35 +310,180 @@
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.21104816" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16855524" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.34844193" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3186969" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>serializer.data[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>queryset[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>queryset</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.get_queryset().get()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.get_queryset().get(1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.get_queryset().count()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.get_queryset().all()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.get_queryset()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>serializer.data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/footballleagueback/wsgi.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/django/db/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        <state>
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footballleagueback/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footballleagueback/asgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/league/migrations/0002_auto_20201017_1334.py" />
+    <entry file="file://$PROJECT_DIR$/league/migrations/0003_auto_20201122_1416.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="685" selection-start-line="685" selection-end-line="685" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3876">
+          <caret line="238" column="37" selection-start-line="238" selection-start-column="37" selection-end-line="238" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="328" column="37" lean-forward="true" selection-start-line="328" selection-start-column="37" selection-end-line="328" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="889" column="40" selection-start-line="889" selection-start-column="40" selection-end-line="889" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="1279" column="8" selection-start-line="1279" selection-start-column="8" selection-end-line="1279" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/league/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="236">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="41" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/league/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/league/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -265,74 +497,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footballleagueback/settings.py">
+    <entry file="file://$PROJECT_DIR$/league/tests.py" />
+    <entry file="file://$PROJECT_DIR$/footballleagueback/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="183" column="19" selection-start-line="183" selection-start-column="6" selection-end-line="183" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footballleagueback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#642#674#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footballleagueback/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/footballleagueback/asgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footballleagueback/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/league/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="-68">
+          <caret line="7" column="71" lean-forward="true" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footballleagueback/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding>
+            <element signature="e#319#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/enumchoicefield/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/league/enums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/league/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="153">
+          <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="26" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/league/models.py">
+    <entry file="file://$PROJECT_DIR$/footballleagueback/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#1#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/league/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
-            <element signature="e#1#36#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/league/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
         </state>
       </provider>
     </entry>

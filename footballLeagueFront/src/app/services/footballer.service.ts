@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Footballer, FootballerAdapter} from '../models/footballer.model';
 import {Observable, throwError} from 'rxjs';
@@ -13,7 +13,8 @@ export class FootballerService {
 
   private restPath = restPath.restPath + '/footballer/';
 
-  constructor( private http: HttpClient, private footballerAdapter: FootballerAdapter) { }
+  constructor(private http: HttpClient, private footballerAdapter: FootballerAdapter) {
+  }
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -29,15 +30,16 @@ export class FootballerService {
 
   getFootballers(): Observable<Footballer[]> {
     return this.http.get(this.restPath).pipe(
-      map( (data: any) => data.footballers.map( item => this.footballerAdapter.adapt(item)
-      )),
+      map((data: any) =>
+        data.map(item => this.footballerAdapter.adapt(item)
+        )),
       catchError(this.handleError)
     );
   }
 
   getFootballer(id: number): Observable<Footballer> {
-    return this.http.get(this.restPath + id).pipe(
-      map( (data: any) => this.footballerAdapter.adapt(data)
+    return this.http.get(this.restPath + id + '/').pipe(
+      map((data: any) => this.footballerAdapter.adapt(data)
       ),
       catchError(this.handleError)
     );
@@ -45,37 +47,39 @@ export class FootballerService {
 
   // tslint:disable-next-line:ban-types
   getPositions(): Observable<String[]> {
-    return this.http.get(this.restPath + 'positions').pipe(
-      map( (data: any) => data.map( item => item)),
+    return this.http.get(this.restPath + 'positions/').pipe(
+      map((data: any) => data.map(item => item)),
       catchError(this.handleError)
     );
   }
 
   removeFootballer(id: number): Observable<any> {
-    return this.http.delete(this.restPath + id , {observe: 'response'}).pipe(
+    return this.http.delete(this.restPath + id, {observe: 'response'}).pipe(
       catchError(this.handleError)
     );
   }
 
   updateFootballer(footballer: Footballer): Observable<any> {
-    return this.http.post(this.restPath + footballer.id + '/update', JSON.stringify(footballer), option).pipe(
+    return this.http.patch(this.restPath + footballer.id + '/', JSON.stringify(footballer), option).pipe(
       catchError(this.handleError)
     );
   }
 
   addFootballer(footballer: Footballer): Observable<any> {
-    return this.http.post(this.restPath + 'add', JSON.stringify(footballer), option).pipe(
+    return this.http.post(this.restPath, JSON.stringify(footballer), option).pipe(
       catchError(this.handleError)
     );
   }
 
-  assignClub(footballerId: number, clubId: number): Observable<any> {
+  assignClub(footballer: Footballer, clubId: number): Observable<any> {
     if (clubId != null) {
-      return this.http.get(this.restPath + footballerId + '/update/club/' + clubId).pipe(
+      footballer.club = clubId;
+      return this.http.patch(this.restPath + footballer.id + '/', footballer).pipe(
         catchError(this.handleError)
       );
     } else {
-      return this.http.get(this.restPath + footballerId + '/update/club/null').pipe(
+      footballer.club = null;
+      return this.http.patch(this.restPath + footballer.id + '/', footballer).pipe(
         catchError(this.handleError)
       );
     }

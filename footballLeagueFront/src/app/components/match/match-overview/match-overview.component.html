@@ -1,0 +1,40 @@
+<div class="row p-md-3">
+  <div class="col-md-12">
+    <div class="row mt-md-5">
+      <div class="col-md-12">
+        <h1>Szczegóły meczu</h1>
+      </div>
+    </div>
+    <div class="row m-3">
+      <button class="btn btn-danger" (click)="removeMatch()">Usuń mecz</button>
+      <button class="btn btn-warning" [routerLink]="'./edit'">Modyfikuj</button>
+    </div>
+    <div class="row" *ngIf="match!=undefined">
+      <div class="col-md-5 "
+           [class.alert]="match.result==='HOMEWIN'"
+           [class.alert-info]="match.result==='HOMEWIN'">
+        <app-team *ngIf="homeClub!=undefined" [team]="homeClub"></app-team>
+      </div>
+
+      <div class="col-md-2" >
+        <div class="h1 text-center" >{{ getResultString() }}</div>
+        <div class="text-center" >{{ match.matchDate | date }}</div>
+      </div>
+      <div class="col-md-5  text-right"
+           [class.alert]="match.result==='AWAYWIN'"
+           [class.alert-info]="match.result==='AWAYWIN'">
+        <app-team *ngIf="homeClub!=undefined" [team]="awayClub"></app-team>
+      </div>
+    </div>
+    <div class="row">
+      <h3>Bramki</h3>
+    </div>
+    <app-goals *ngIf="match.id!=null" [match]="match" [homeGoals]="matchGoals.HOME" [awayGoals]="matchGoals.AWAY"></app-goals>
+    <div class="row">
+      <h3>Kartki</h3>
+    </div>
+    <app-cards *ngIf="match.id!=null" [match]="match" [homeCards]="matchCards.HOME" [awayCards]="matchCards.AWAY"></app-cards>
+  </div>
+</div>
+
+

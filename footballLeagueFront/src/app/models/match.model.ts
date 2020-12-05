@@ -1,5 +1,7 @@
-import { Injectable } from '@angular/core';
-import { Adapter } from '../services/adapter';
+import {Injectable} from '@angular/core';
+import {Adapter} from '../services/adapter';
+import {Goal} from './goal.model';
+import {Card} from './card.model';
 
 export class Match {
   constructor(
@@ -7,23 +9,26 @@ export class Match {
     public homeSide: number,
     public awaySide: number,
     public matchDate: Date,
-    public goals: number[],
+    public goals: Goal[],
+    public cards: Card[],
     public result: string
-  ) {}
+  ) {
+  }
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class MatchAdapter implements Adapter<Match> {
-  adapt(from: any){
+  adapt(from: any) {
     return new Match(
       from.id,
       from.homeSide,
       from.awaySide,
       from.matchDate,
       from.goals,
-      from.result
+      from.cards,
+      from.result,
     );
   }
 }

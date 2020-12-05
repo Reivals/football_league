@@ -4,6 +4,7 @@ import {Observable, throwError} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 import {Club, ClubAdapter} from '../models/club.model';
 import {option, restPath} from '../../environments/environment';
+import {Footballer, FootballerAdapter} from '../models/footballer.model';
 
 
 @Injectable({
@@ -13,7 +14,7 @@ export class ClubService {
 
   private restPath = restPath.restPath + '/club/';
 
-  constructor(private http: HttpClient, private clubAdapter: ClubAdapter/*, private footballerAdapter: FootballerAdapter*/) {
+  constructor(private http: HttpClient, private clubAdapter: ClubAdapter, private footballerAdapter: FootballerAdapter) {
   }
 
   private handleError(error: HttpErrorResponse) {
@@ -30,7 +31,7 @@ export class ClubService {
 
   getClubs(): Observable<Club[]> {
     return this.http.get(this.restPath).pipe(
-      map((data: any) => data.clubs.map(item => this.clubAdapter.adapt(item)
+      map((data: any) => data.map(item => this.clubAdapter.adapt(item)
       )),
       catchError(this.handleError)
     );
@@ -44,22 +45,22 @@ export class ClubService {
     );
   }
 
-  /*  getFootballersFromClub(id: number): Observable<Footballer[]> {
-      return this.http.get(this.restPath + id + '/squad').pipe(
+    getFootballersFromClub(id: number): Observable<Footballer[]> {
+      return this.http.get(this.restPath + id + '/').pipe(
         map((data: any) => data.footballers.map(item => this.footballerAdapter.adapt(item)
         )),
         catchError(this.handleError)
       );
-    }*/
+    }
 
   removeClub(id: number): Observable<any> {
-    return this.http.delete(this.restPath + id, {observe: 'response'}).pipe(
+    return this.http.delete(this.restPath + id + '/', {observe: 'response'}).pipe(
       catchError(this.handleError)
     );
   }
 
   updateClub(club: Club): Observable<any> {
-    return this.http.put(this.restPath + club.id, JSON.stringify(club), option).pipe(
+    return this.http.put(this.restPath + club.id + '/', JSON.stringify(club), option).pipe(
       catchError(this.handleError)
     );
   }

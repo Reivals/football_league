@@ -1,0 +1,61 @@
+
+<div class="form-group small row" *ngIf="footballers!=undefined">
+  <ul class="list-group col-md-6">
+    <li class="list-group-item" *ngFor="let goal of homeGoals">
+      {{ goal.goalMinute }}" {{getFootballerName(goal.footballer)}}
+      <span class="icon float-right">
+        <i class="fas fa-edit edit mr-4 hoverable" data-toggle="modal" data-target="#goalModal" (click)="setGoalCandidateToUpdate(goal)"></i>
+        <i class="far fa-trash-alt alt hoverable" (click)="removeGoal(goal.id)"></i>
+      </span>
+    </li>
+    <button class="list-group-item" data-toggle="modal" data-target="#goalModal" (click)="setGoalCandidate('HOME')">
+      Dodaj
+    </button>
+  </ul>
+  <ul class="list-group col-md-6 text-right">
+    <li class="list-group-item" *ngFor="let goal of awayGoals">
+      {{ goal.goalMinute }}" {{getFootballerName(goal.footballer)}}
+      <span class="icon float-left ">
+        <i class="fas fa-edit edit mr-4 hoverable" data-toggle="modal" data-target="#goalModal" (click)="setGoalCandidateToUpdate(goal)"></i>
+        <i class="far fa-trash-alt alt hoverable" (click)="removeGoal(goal.id)"></i>
+      </span>
+    </li>
+    <button class="list-group-item" data-toggle="modal" data-target="#goalModal" (click)="setGoalCandidate('AWAY')">
+      Dodaj
+    </button>
+  </ul>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="#GoalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GoalModalLabel">Piłka bramka gol!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #form="ngForm">
+          <div class="form-group">
+            <label for="date">Minuta meczu</label>
+            <input type="number" class="form-control" id="date" [(ngModel)]="goalCandidate.goalMinute" name="goalMinute" required>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Strzelec</label>
+            <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="goalCandidate.footballer" name="scorer" required>
+              <option *ngFor="let footballer of formFootballers" [value]="footballer.id">{{footballer.name+' '+footballer.surname}}</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" [disabled]="form.invalid"
+                [ngClass]="{'disabled': form.invalid}" (click)="onSubmit()">Zapisz</button>
+      </div>
+    </div>
+  </div>
+</div>

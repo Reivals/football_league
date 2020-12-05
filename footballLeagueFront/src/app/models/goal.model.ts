@@ -6,7 +6,7 @@ export class Goal {
     public id: number,
     public goalMinute: number,
     public match: number,
-    public scorer: number,
+    public footballer: number,
     public side: string
   ) {}
 }
@@ -20,7 +20,7 @@ export class GoalAdapter implements Adapter<Goal> {
       from.id,
       from.goalMinute,
       from.match,
-      from.scorer,
+      from.footballer,
       from.side,
     );
   }

@@ -1,0 +1,15 @@
+.plus{
+  margin-right: 0.5em;
+  margin-top: 0.4em;
+}
+.plus:hover{
+  margin-right: 0.5em;
+  margin-top: 0.4em;
+  color: #005cbf;
+}
+.icon{
+  font-size: 2em;
+  color: lightgrey;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+}

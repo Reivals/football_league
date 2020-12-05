@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ClubService} from '../../services/club.service';
-import {Router} from '@angular/router';
 import {UpdateEmitterService} from '../../services/update-emitter.service';
 import {Subscription} from 'rxjs';
 import {ToastrService} from 'ngx-toastr';

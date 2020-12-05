@@ -1,0 +1,77 @@
+<div class="form-group small row" *ngIf="footballers!=undefined">
+  <ul class="list-group col-md-6">
+    <li class="list-group-item" *ngFor="let card of homeCards">
+      {{ card.minute }}" {{getFootballerName(card.footballer)}} {{card.type}}
+      <span class="icon float-right">
+        <i class="fas fa-edit edit mr-4 hoverable" data-toggle="modal" data-target="#cardModal"
+           (click)="setCardCandidateToUpdate(card)"></i>
+        <i class="far fa-trash-alt alt hoverable" (click)="removeCard(card.id)"></i>
+      </span>
+    </li>
+    <button class="list-group-item" data-toggle="modal" data-target="#cardModal" (click)="setCardCandidate('HOME')">
+      Dodaj
+    </button>
+  </ul>
+  <ul class="list-group col-md-6 text-right">
+    <li class="list-group-item" *ngFor="let card of awayCards">
+      {{ card.minute }}" {{getFootballerName(card.footballer)}} {{card.type}}
+      <span class="icon float-left ">
+        <i class="fas fa-edit edit mr-4 hoverable" data-toggle="modal" data-target="#cardModal"
+           (click)="setCardCandidateToUpdate(card)"></i>
+        <i class="far fa-trash-alt alt hoverable" (click)="removeCard(card.id)"></i>
+      </span>
+    </li>
+    <button class="list-group-item" data-toggle="modal" data-target="#cardModal" (click)="setCardCandidate('AWAY')">
+      Dodaj
+    </button>
+  </ul>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="#CardModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CardModalLabel">Fauuuuuul!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #form="ngForm">
+          <div class="form-group">
+            <label for="date">Minuta meczu</label>
+            <input type="number" class="form-control" id="date" [(ngModel)]="cardCandidate.minute" name="date"
+                   required>
+          </div>
+
+          <div class="form-group">
+            <label for="footballer">Niesportowy gracz</label>
+            <select class="form-control" id="footballer" [(ngModel)]="cardCandidate.footballer" name="footballer" required>
+              <option *ngFor="let footballer of formFootballers"
+                      [value]="footballer.id">{{footballer.name + ' ' + footballer.surname}}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="type">Typ kartki</label>
+            <select class="form-control" id="type" [(ngModel)]="cardCandidate.type" name="type" required>
+              <option *ngFor="let type of cardTypes" >{{type}}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Powod</label>
+            <input type="text" id="reason" class="form-control" [(ngModel)]="cardCandidate.reason" name="reason" required>
+          </div>
+        </form>
+      </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal" [disabled]="form.invalid"
+              [ngClass]="{'disabled': form.invalid}" (click)="onSubmit()">Zapisz
+      </button>
+    </div>
+  </div>
+</div>
+</div>

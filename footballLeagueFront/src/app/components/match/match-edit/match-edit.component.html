@@ -1,0 +1,38 @@
+<div class="row mt-md-5">
+  <div class="col-md-12">
+    <h2 *ngIf="addMode">Dodaj nowy mecz</h2>
+    <h2 *ngIf="!addMode">Edytuj</h2>
+  </div>
+</div>
+<div class="row p-md-3">
+  <form class="col" (ngSubmit)="onSubmit()" #form="ngForm" >
+      <div class="form-group">
+        <label for="homeSide">Gospodarz</label>
+        <app-team-picker *ngIf="addMode || match.homeSide!=null" id="homeSide" [value]="match.homeSide" (valueChanged)="assignToHomeSideId($event)" placeholder="Klub gospodarzy"></app-team-picker>
+      </div>
+
+      <div class="form-group">
+        <label for="awaySide">Gość</label>
+        <app-team-picker *ngIf="addMode || match.homeSide!=null" id="awaySide" [value]="match.awaySide" (valueChanged)="assignToAwaySideId($event)" placeholder="Klub gości"></app-team-picker>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Data</label>
+        <input type="date" class="form-control" id="date" [(ngModel)]="match.matchDate" name="matchDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Stan</label>
+        <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="match.result" name="result" >
+          <option></option>
+          <option *ngFor="let matchResult of matchResults">{{matchResult}}</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary"
+              [disabled]="form.invalid || match.homeSide==null || match.awaySide==null "
+              [ngClass]="{'disabled': form.invalid || match.homeSide==null || match.awaySide==null}">
+        Zapisz
+      </button>
+  </form>
+</div>

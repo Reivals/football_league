@@ -24,6 +24,7 @@ export class FootballerComponent implements OnInit {
     this.sub = this.footballerService.getFootballers().subscribe(
       (data: Footballer[]) => {
         this.footballers = data;
+        console.log(this.footballers);
         this.footballers.sort((a: Footballer,  b: Footballer) => a.id-b.id)
       },
       error => this.toastr.warning(error.message, "Warning!")

@@ -1,14 +1,18 @@
 import {Injectable, EventEmitter} from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UpdateEmitterService {
 
   footballersUpdate = new EventEmitter();
   clubsUpdate = new EventEmitter();
   matchesUpdate = new EventEmitter();
   goalsUpdate = new EventEmitter();
+  cardsUpdate = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+  }
 
   updateFootballers() {
     this.footballersUpdate.emit();
@@ -24,5 +28,9 @@ export class UpdateEmitterService {
 
   updateGoals() {
     this.goalsUpdate.emit();
+  }
+
+  updateCards() {
+    this.cardsUpdate.emit();
   }
 }
