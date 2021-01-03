@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="33886b66-d661-436b-a8a0-94c04cd8e4ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/contact/contact.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/match/match-overview/match-overview.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/match/cards/cards.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/match/cards/cards.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/match/cards/cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/match/cards/cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/match/goals/goals.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/match/goals/goals.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/club.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/club.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/goal.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/goal.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../footballleagueback/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../footballleagueback/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +108,9 @@
       <workItem from="1606044419019" duration="14434000" />
       <workItem from="1606559047644" duration="11928000" />
       <workItem from="1606575835338" duration="2280000" />
-      <workItem from="1607166884171" duration="2939000" />
+      <workItem from="1607166884171" duration="3004000" />
+      <workItem from="1607249179050" duration="4023000" />
+      <workItem from="1609675824788" duration="184000" />
     </task>
     <servers />
   </component>

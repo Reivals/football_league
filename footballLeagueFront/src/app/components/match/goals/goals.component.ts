@@ -22,11 +22,9 @@ export class GoalsComponent implements OnInit {
 
   public willUpdate = false;
 
-  public footballers: Footballer[];
-
-  private homeFootballers: Footballer[];
-  private awayFootballers: Footballer[];
-
+  public footballers: Footballer[] = [];
+  private homeFootballers: Footballer[] = [];
+  private awayFootballers: Footballer[] = [];
   public formFootballers: Footballer[] = [];
 
   public goalCandidate: Goal = new Goal(null, null, null, null, null);
@@ -43,8 +41,13 @@ export class GoalsComponent implements OnInit {
   ngOnInit() {
     this.footballerService.getFootballers().subscribe((footballers) => {
         this.footballers = footballers;
-        this.homeFootballers = this.footballers.filter(ft => ft.club === this.match.homeSide);
-        this.awayFootballers = this.footballers.filter(ft => ft.club === this.match.awaySide);
+        this.footballers.filter(ft => {
+          if(ft.club === this.match.homeSide) {
+            this.homeFootballers.push(ft);
+          } else if(ft.club === this.match.awaySide) {
+            this.awayFootballers.push(ft);
+          }
+        });
       },
       error => console.log(error)
     );

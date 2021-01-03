@@ -49,7 +49,7 @@ export class CardService {
   }
 
   updateCard(card: Card): Observable<any> {
-    return this.http.post(this.restPath + `${card.id}/update`, JSON.stringify(card), option).pipe(
+    return this.http.patch(this.restPath + `${card.id}/`, JSON.stringify(card), option).pipe(
       catchError(this.handleError)
     );
   }

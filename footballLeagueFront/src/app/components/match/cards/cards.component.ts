@@ -7,6 +7,7 @@ import {ToastrService} from 'ngx-toastr';
 import {UpdateEmitterService} from '../../../services/update-emitter.service';
 import {Card} from '../../../models/card.model';
 import {CardService} from '../../../services/card.service';
+import {FormControl, FormGroup, ValidationErrors, Validators} from '@angular/forms';
 
 
 @Component({
@@ -20,15 +21,15 @@ export class CardsComponent implements OnInit {
   @Input() awayCards: Card[];
   public willUpdate = false;
 
-  public footballers: Footballer[];
-
-  private homeFootballers: Footballer[];
-  private awayFootballers: Footballer[];
+  public footballers: Footballer[] = [];
+  private homeFootballers: Footballer[] = [];
+  private awayFootballers: Footballer[] = [];
 
   public formFootballers: Footballer[] = [];
 
   public cardCandidate: Card = new Card(null, null, null, null, null, null, null);
   public cardTypes: string[];
+  public cardForm: FormGroup;
 
   constructor(
     private footballerService: FootballerService,
@@ -37,13 +38,19 @@ export class CardsComponent implements OnInit {
     private toastService: ToastrService,
     private updater: UpdateEmitterService
   ) {
+    this.cardForm = this.createFormGroup();
   }
 
   ngOnInit() {
     this.footballerService.getFootballers().subscribe((footballers) => {
         this.footballers = footballers;
-        this.homeFootballers = this.footballers.filter(ft => ft.club === this.match.homeSide);
-        this.awayFootballers = this.footballers.filter(ft => ft.club === this.match.awaySide);
+        this.footballers.filter(ft => {
+          if (ft.club === this.match.homeSide) {
+            this.homeFootballers.push(ft);
+          } else if (ft.club === this.match.awaySide) {
+            this.awayFootballers.push(ft);
+          }
+        });
       },
       error => console.log(error)
     );
@@ -52,6 +59,15 @@ export class CardsComponent implements OnInit {
       },
       error => console.log(error)
     );
+  }
+
+  createFormGroup() {
+    return new FormGroup({
+      matchMinute: new FormControl('', [Validators.required]),
+      footballer: new FormControl('', [Validators.required]),
+      cardType: new FormControl('', [Validators.required]),
+      reason: new FormControl('', [Validators.required])
+    });
   }
 
   getFootballerName(id: number) {
@@ -82,7 +98,10 @@ export class CardsComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.cardCandidate);
+    this.cardCandidate.minute = this.cardForm.get('matchMinute').value;
+    this.cardCandidate.type = this.cardForm.get('cardType').value;
+    this.cardCandidate.reason = this.cardForm.get('reason').value;
+    this.cardCandidate.footballer = this.cardForm.get('footballer').value;
     if (this.willUpdate) {
       this.cardService.updateCard(this.cardCandidate).subscribe(
         data => {

@@ -48,7 +48,7 @@ export class GoalService {
   }
 
   updateGoal(goal: Goal): Observable<any> {
-    return this.http.post(this.restPath + `${goal.id}/update`, JSON.stringify(goal), option).pipe(
+    return this.http.patch(this.restPath + `${goal.id}/`, JSON.stringify(goal), option).pipe(
       catchError(this.handleError)
     );
   }

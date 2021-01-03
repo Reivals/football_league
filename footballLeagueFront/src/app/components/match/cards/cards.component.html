@@ -32,46 +32,44 @@
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="CardModalLabel">Fauuuuuul!</h5>
+        <h5 class="modal-title" id="CardModalLabel">Faul!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form #form="ngForm">
-          <div class="form-group">
-            <label for="date">Minuta meczu</label>
-            <input type="number" class="form-control" id="date" [(ngModel)]="cardCandidate.minute" name="date"
-                   required>
-          </div>
 
-          <div class="form-group">
+        <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label for="matchMinute">Minuta meczu</label>
+            <input formControlName="matchMinute" type="number" class="form-control" id="matchMinute">
+          </div>
+          <div>
             <label for="footballer">Niesportowy gracz</label>
-            <select class="form-control" id="footballer" [(ngModel)]="cardCandidate.footballer" name="footballer" required>
+            <select formControlName="footballer" id="footballer" class="form-control">
               <option *ngFor="let footballer of formFootballers"
                       [value]="footballer.id">{{footballer.name + ' ' + footballer.surname}}</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label for="type">Typ kartki</label>
-            <select class="form-control" id="type" [(ngModel)]="cardCandidate.type" name="type" required>
-              <option *ngFor="let type of cardTypes" >{{type}}</option>
+          <div>
+            <label for="cardType">Typ kartki</label>
+            <select formControlName="cardType" id="cardType" class="form-control">
+              <option value="" selected disabled hidden>Wybierz kartkę</option>
+              <option *ngFor="let type of cardTypes">{{type}}</option>
             </select>
           </div>
-
-          <div class="form-group">
+          <div>
             <label for="reason">Powod</label>
-            <input type="text" id="reason" class="form-control" [(ngModel)]="cardCandidate.reason" name="reason" required>
+            <input formControlName="reason" type="text" id="reason" class="form-control">
           </div>
         </form>
       </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-      <button type="button" class="btn btn-primary" data-dismiss="modal" [disabled]="form.invalid"
-              [ngClass]="{'disabled': form.invalid}" (click)="onSubmit()">Zapisz
-      </button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" [disabled]="!cardForm.valid"
+                (click)="onSubmit()">Zapisz
+        </button>
+      </div>
     </div>
   </div>
-</div>
 </div>
